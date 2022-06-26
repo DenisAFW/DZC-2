@@ -6,9 +6,21 @@ void ThirdNumber(int a)
     {
         Console.WriteLine("В введенном числе отсутствует третье число");
     }
-    else
+    if(a>100 & a<999)
     {
         int f = a % 10;
+        Console.WriteLine("В числе пристутствует третье и число и это " + f);
+    }
+    if(a>1000 & a<9999)
+    {
+        int f = a % 100;
+        f = f / 10;
+        Console.WriteLine("В числе пристутствует третье и число и это " + f);
+    }
+    if(a>10000)
+    {
+        int f = a % 1000;
+        f = f / 100;
         Console.WriteLine("В числе пристутствует третье и число и это " + f);
     }
 }
